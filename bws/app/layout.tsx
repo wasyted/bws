@@ -1,5 +1,6 @@
 import localFont from 'next/font/local';
 import './globals.css';
+import Nav from '@/components/ui/Nav';
 
 const circularStd = localFont({
   src: [
@@ -29,7 +30,7 @@ const circularStd = localFont({
       style: 'normal',
     },
   ],
-  variable: '--font-circular-std', 
+  variable: '--font-circular-std',
 });
 
 export default function RootLayout({
@@ -39,7 +40,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${circularStd.variable} font-sans`}>
-      <body>{children}</body>
+      <body className=''>
+        <Nav />
+        {children}
+      </body>
     </html>
   )
 }
