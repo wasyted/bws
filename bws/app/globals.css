@@ -6,6 +6,7 @@
   --background: var(--color-white);
   --foreground: var(--color-black);
   --color-primary: #536758;
+  --color-primary-light: #627c68;
   --color-secondary: #9F5B4A;
   --color-gray: #939393;
   --color-gray-dark: #2B2B2B;
@@ -17,6 +18,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-primary: var(--color-primary);
+  --color-primary-light: var(--color-primary-light);
   --color-white: var(--color-white);
   --color-black: var(--color-black);
   --color-gray-dark: var(--color-gray-dark);
@@ -54,6 +56,13 @@ h3 {
   font-size: 20px;
   line-height: 26px;
   letter-spacing: 0px;
+}
+
+h4  {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 1.5px;
 }
 
 p {
