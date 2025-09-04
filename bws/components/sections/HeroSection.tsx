@@ -19,7 +19,9 @@ export default function HeroSection() {
       <div className="px-8 md:px-16 lg:px-[144px] mt-[190px]">
         <HeroTitle />
         <HeroSubtitle />
-        <Button>Shop Now</Button>
+        <div className="mt-[50px]">
+          <Button type={'filled'}>Shop Now</Button>
+        </div>
       </div>
     </header>
   )
