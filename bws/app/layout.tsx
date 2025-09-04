@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
 import Nav from '@/components/ui/Nav';
@@ -33,6 +34,20 @@ const circularStd = localFont({
   variable: '--font-circular-std',
 });
 
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | BWS', // Page titles will look like "Features | BWS"
+    default: 'BWS', // Default title for the homepage
+  },
+  description: 'Buy natural stone for your home.',
+  openGraph: {
+    title: 'BWS',
+    description: 'Buy natural stone for your home.',
+    images: ['/logo.png'],
+  },
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -41,6 +56,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${circularStd.variable} font-sans`}>
       <body className=''>
+        <title>Upscale Your Home With Natural Stone</title>
         <Nav />
         {children}
       </body>
