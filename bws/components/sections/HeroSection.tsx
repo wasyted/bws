@@ -14,7 +14,7 @@ export default function HeroSection() {
         quality={80}
         fill
         priority
-        className="object-cover grayscale absolute z-[-1]"
+        className="brightness-80 saturate-95 contrast-90 darken-20 object-cover grayscale absolute z-[-1]"
       />
       <div className="px-8 md:px-16 lg:px-[144px] mt-[190px]">
         <HeroTitle />
